@@ -6,8 +6,6 @@ public class AddressBuilderApp {
     //created a static scanner
     public static Scanner scanner = new Scanner(System.in);
     public static void main(String[] args) {
-        //initialize the string builder
-
         //Initialize stringbuilder
         StringBuilder sb = new StringBuilder();
 
@@ -15,44 +13,21 @@ public class AddressBuilderApp {
         System.out.print("Full name: ");
         String fullName = scanner.nextLine().trim();
 
-
-//        //space for readability
-//        System.out.println();
-//
-//        // ask user for their shipping information and store it in a variable.
-//        System.out.print("Shipping Street: ");
-//        String shippingStreet = scanner.nextLine().trim();
-//
-//        System.out.print("Shipping City: ");
-//        String ShippingStreet = scanner.nextLine().trim();
-//
-//        System.out.print("Shipping State: ");
-//        String shippingState = scanner.nextLine().trim();
-//
-//        System.out.print("Shipping State: ");
-//        String shippingZip = scanner.nextLine().trim();
-
-
-//        sb.append(fullName).append("\n");
-//
-//        sb.append("Billing Address:\n");
-//        sb.append(billingStreet).append("\n");
-//        sb.append(billingCity).append(", ")
-//                .append(billingState).append(" ")
-//                .append(billingZip).append("\n");
-
-        //print a space
-        System.out.println();
-        // print the information from the stringbuilder
-
+        // calling the buildAdress twice with a space in between
         String billing = buildAddress("Billing");
+        System.out.println();// space between billing and shipping prompts
+        String shipping = buildAddress("Shipping");
+
+        // print the infromation
+        System.out.println();
+        System.out.println(fullName + "\n" + "Billing Address:");
         System.out.println(billing);
+        System.out.println("\nShipping Address:" + "\n" + shipping);
 
     }
         // Method that handles bulling/shipping address and appends on the builder
         public static String buildAddress(String text){
             StringBuilder sb = new StringBuilder();
-            System.out.println( text + " Address");
 
             //ask user for thei billing address
             System.out.print( text + " Street: ");
