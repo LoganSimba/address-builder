@@ -29,6 +29,18 @@ public class AddressBuilderApp {
         System.out.print("Billing Zip: ");
         String billingZip = scanner.nextLine();;
 
+        //space for readability
+        System.out.println();
+
+        // ask user for their shipping information and store it in a variable
+        System.out.print("Shipping Street: ");
+        String shippingStreet = scanner.nextLine();
+
+        System.out.print("Shipping City: ");
+        String ShippingStreet = scanner.nextLine();
+
+        System.out.print("Billing State: ");
+        String shippingState = scanner.nextLine();
 
     }
 }
