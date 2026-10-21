@@ -32,7 +32,7 @@ public class AddressBuilderApp {
         //space for readability
         System.out.println();
 
-        // ask user for their shipping information and store it in a variable
+        // ask user for their shipping information and store it in a variable.
         System.out.print("Shipping Street: ");
         String shippingStreet = scanner.nextLine();
 
