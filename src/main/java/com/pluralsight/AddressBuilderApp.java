@@ -25,7 +25,7 @@ public class AddressBuilderApp {
         System.out.print("Billing State: ");
         String billingState = scanner.nextLine();
 
-        //ask user for their zip
+        //ask user for their zip.
         System.out.print("Billing Zip: ");
         String billingZip = scanner.nextLine();;
 
