@@ -27,6 +27,7 @@ public class AddressBuilderApp {
     }
         // Method that handles bulling/shipping address and appends on the builder
         public static String buildAddress(String text){
+            //create string builder
             StringBuilder sb = new StringBuilder();
 
             //ask user for thei billing address
@@ -45,6 +46,7 @@ public class AddressBuilderApp {
             System.out.print(text + " Zip: ");
             String Zip = scanner.nextLine().trim();
 
+            //append the input from user in a desired format
             sb.append(street).append("\n")
                     .append(city).append(", ")
                     .append(state).append(" ")
@@ -52,8 +54,5 @@ public class AddressBuilderApp {
 
             return sb.toString();
         }
-
-
-
     }
 
