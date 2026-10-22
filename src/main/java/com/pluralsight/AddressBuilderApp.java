@@ -26,33 +26,33 @@ public class AddressBuilderApp {
 
     }
         // Method that handles bulling/shipping address and appends on the builder
-        public static String buildAddress(String text){
-            //create string builder
-            StringBuilder sb = new StringBuilder();
 
-            //ask user for thei billing address
-            System.out.print( text + " Street: ");
-            String street = scanner.nextLine().trim();
+    public static String buildAddress(String text){
+        //create string builder
+        StringBuilder sb = new StringBuilder();
 
-            //ask user for their billing city
-            System.out.print( text + " City: ");
-            String city = scanner.nextLine().trim();
+        //ask user for thei billing address
+        System.out.print( text + " Street: ");
+        String street = scanner.nextLine().trim();
 
-            //ask user for their state
-            System.out.print(text + " State: ");
-            String state = scanner.nextLine().trim();
+        //ask user for their billing city
+        System.out.print( text + " City: ");
+        String city = scanner.nextLine().trim();
 
-            //ask user for their zip.
-            System.out.print(text + " Zip: ");
-            String Zip = scanner.nextLine().trim();
+        //ask user for their state
+        System.out.print(text + " State: ");
+        String state = scanner.nextLine().trim();
 
-            //append the input from user in a desired format
-            sb.append(street).append("\n")
-                    .append(city).append(", ")
-                    .append(state).append(" ")
-                    .append(Zip);
+        //ask user for their zip.
+        System.out.print(text + " Zip: ");
+        String Zip = scanner.nextLine().trim();
 
-            return sb.toString();
+        //append the input from user in a desired format
+        sb.append(street).append("\n")
+                .append(city).append(", ")
+                .append(state).append(" ")
+                .append(Zip);
+        return sb.toString();
         }
     }
 
